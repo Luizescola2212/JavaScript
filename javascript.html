@@ -5,13 +5,33 @@
     <meta name="viewport" content="width='device-width', initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body onload="sol()">
+    
     <script type="text/javascript">
         function mudar(objeto, imagem){
             lua.src = imagem;
         }
     </script>
     <a onmouseover="mudar('lua', 'lua.jpg')" onmouseout="mudar('lua', 'sol.jpg')">
-    <img src="sol.jpg" alt="" id="lua"></a>    
+    <img src="sol.jpg" alt="" id="lua"></a>  
+
+    <script type="text/javascript">
+        function sol(){
+            var x = prompt("escreva algo");
+            if(x > 10){
+                alert("x é maior que 10!");
+            }
+            else if(x < 10){
+                alert("x é menor que 10!");
+            }
+            else if(x === 10){
+                alert("x é igual a 10!");
+            }
+            else{
+                alert("não é numero!");
+                document.write("!ERRO!")
+            }
+        }
+    </script>
 </body>
 </html>
